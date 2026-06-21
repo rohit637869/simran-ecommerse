@@ -71,7 +71,7 @@ export default function CartPage() {
                       </p>
                     </div>
                     <p className="text-sm text-[#F5F0EB]">
-                      ${(item.price * item.quantity).toLocaleString()}
+                      ₹{(item.price * item.quantity).toLocaleString()}
                     </p>
                   </div>
                   <div className="flex items-center justify-between mt-4">
@@ -112,7 +112,7 @@ export default function CartPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between text-[#F5F0EB]/60">
                   <span>Subtotal</span>
-                  <span>${subtotal.toLocaleString()}</span>
+                  <span>₹{subtotal.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-[#F5F0EB]/60">
                   <span>Shipping</span>
@@ -132,7 +132,7 @@ export default function CartPage() {
                 <div className="border-t border-white/5 pt-3 mt-3">
                   <div className="flex justify-between text-[#F5F0EB] font-medium">
                     <span>Total</span>
-                    <span>${total.toLocaleString()}</span>
+                    <span>₹{total.toLocaleString()}</span>
                   </div>
                 </div>
               </div>

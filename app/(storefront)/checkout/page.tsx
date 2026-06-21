@@ -352,15 +352,15 @@ export default function CheckoutPage() {
             <div className="space-y-2 text-sm">
               <div className="flex justify-between text-[#F5F0EB]/60">
                 <span>Subtotal</span>
-                <span>${subtotal.toLocaleString()}</span>
+                <span>₹{subtotal.toLocaleString()}</span>
               </div>
               <div className="flex justify-between text-[#F5F0EB]/60">
                 <span>Shipping</span>
                 <span>{shipping === 0 ? <span className="text-green-400">Free</span> : `$${shipping}`}</span>
               </div>
               <div className="border-t border-white/5 pt-2 mt-2 flex justify-between text-[#F5F0EB] font-medium">
-                <span>Total</span>
-                <span>${total.toLocaleString()}</span>
+                  <span>Total</span>
+                  <span>₹{total.toLocaleString()}</span>
               </div>
             </div>
           </div>
@@ -376,7 +376,7 @@ export default function CheckoutPage() {
                 Placing Order...
               </>
             ) : (
-              `Place Order — $${total.toLocaleString()}`
+              `Place Order — ₹${total.toLocaleString()}`
             )}
           </button>
         </form>

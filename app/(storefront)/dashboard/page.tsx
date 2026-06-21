@@ -93,7 +93,7 @@ export default function DashboardPage() {
                     : "—"}
                 </span>
                 <span className="text-[#F5F0EB]">
-                  ${parseFloat(order.grandTotal || "0").toLocaleString()}
+                  ₹{parseFloat(order.grandTotal || "0").toLocaleString()}
                 </span>
               </div>
             </Link>

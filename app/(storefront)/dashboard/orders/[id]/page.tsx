@@ -145,7 +145,7 @@ export default function OrderDetailPage() {
                     </p>
                   </div>
                   <p className="text-sm text-[#F5F0EB]">
-                    ${parseFloat(item.totalPrice).toLocaleString()}
+                    ₹{parseFloat(item.totalPrice).toLocaleString()}
                   </p>
                 </div>
               ))}
@@ -153,21 +153,21 @@ export default function OrderDetailPage() {
             <div className="mt-4 pt-4 border-t border-white/5 space-y-1.5 text-sm">
               <div className="flex justify-between text-[#F5F0EB]/60">
                 <span>Subtotal</span>
-                <span>${parseFloat(order.subtotal).toLocaleString()}</span>
+                <span>₹{parseFloat(order.subtotal).toLocaleString()}</span>
               </div>
               <div className="flex justify-between text-[#F5F0EB]/60">
                 <span>Shipping</span>
-                <span>${parseFloat(order.shippingTotal || "0").toLocaleString()}</span>
+                <span>₹{parseFloat(order.shippingTotal || "0").toLocaleString()}</span>
               </div>
               {parseFloat(order.taxTotal || "0") > 0 && (
                 <div className="flex justify-between text-[#F5F0EB]/60">
                   <span>Tax</span>
-                  <span>${parseFloat(order.taxTotal).toLocaleString()}</span>
+                  <span>₹{parseFloat(order.taxTotal).toLocaleString()}</span>
                 </div>
               )}
               <div className="flex justify-between text-[#F5F0EB] font-medium pt-2 border-t border-white/5">
                 <span>Total</span>
-                <span>${parseFloat(order.grandTotal).toLocaleString()}</span>
+                <span>₹{parseFloat(order.grandTotal).toLocaleString()}</span>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function OrderDetailPage() {
               )}
               <div className="pt-2 border-t border-white/5 flex justify-between text-[#F5F0EB]">
                 <span>Total Charged</span>
-                <span>${parseFloat(order.grandTotal).toLocaleString()}</span>
+                <span>₹{parseFloat(order.grandTotal).toLocaleString()}</span>
               </div>
             </div>
           </div>

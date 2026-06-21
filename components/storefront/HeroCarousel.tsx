@@ -275,7 +275,7 @@ function SlideThree({ products }: { products: NewProduct[] }) {
                       {p.name}
                     </p>
                     <p className="text-xs text-[#C9956C] font-[family-name:var(--font-heading)]">
-                      ${parseFloat(p.basePrice).toLocaleString()}
+                      ₹{parseFloat(p.basePrice).toLocaleString()}
                     </p>
                   </div>
                 </Link>

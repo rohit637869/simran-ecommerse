@@ -136,7 +136,7 @@ export default function ProductDetailPage() {
               {product.name}
             </h1>
             <p className="text-2xl text-[#C9956C] mb-8 font-[family-name:var(--font-heading)]">
-              ${parseFloat(product.basePrice).toLocaleString()}
+              ₹{parseFloat(product.basePrice).toLocaleString()}
             </p>
 
             {sizes.length > 0 && (

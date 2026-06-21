@@ -113,7 +113,7 @@ export default function ProductCard({
           </h3>
         </Link>
         <p className="text-sm text-[#F5F0EB]/60">
-          ${parseFloat(basePrice).toLocaleString()}
+          ₹{parseFloat(basePrice).toLocaleString()}
         </p>
       </div>
     </div>
